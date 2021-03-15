@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    {% if title %}
-    <title>Flask Blog - {{title}}</title>
-    {% else %}
-    <title>Flask Blog</title>
-    {% endif %}
-</head>  
-<body>
-    <h1>About Page</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+    <h1>About this site:</h1>
+    <p>This site is created by Anurag Sharma <a href="https://github.com/sharmaanurag95">Github</a> </p>
+{% endblock content%}
